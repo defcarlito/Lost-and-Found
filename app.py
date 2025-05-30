@@ -18,8 +18,8 @@ FLASK_SECRET_KEY = os.getenv("FLASK_SECRET_KEY")
 
 app = Flask(__name__)
 app.secret_key = FLASK_SECRET_KEY
-
-REDIRECT_URI = "http://localhost:5000/getAToken" # where MS sends user after they sign in
+REDIRECT_URI = "https://lost-and-found-1-8tmz.onrender.com/getAToken" # where MS sends user after they sign in
+# REDIRECT_URI = "http://localhost:5000/getAToken" # where MS sends user after they sign in
 SCOPE = ["User.Read"] # the info we are asking for
 AUTHORITY = "https://login.microsoftonline.com/common" # the MS log in server
 
