@@ -36,6 +36,7 @@
 }
 
 .main h1 {
+    margin-bottom: 15px;
     color:white;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
@@ -53,7 +54,7 @@
     backdrop-filter: blur(5.2px);
     -webkit-backdrop-filter: blur(8.2px);
 
-    font-size: 25px;
+    font-size: 35px;
     color: white;
 
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
@@ -67,15 +68,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
+
     margin: auto;
     gap: 30px;
 }
 
 .sub {
+    display: flex;
+    flex-direction: column;
+
     background: rgb(245, 245, 245);
-    max-height: 300px;
     max-width: 100%;
-    padding: 2%;
+    row-gap: 1rem;
+    padding: 35px;
 
     border-radius: 30px;
 
@@ -91,10 +96,16 @@
     line-height: 1.6;
 }
 
-/* For Mobile */
+/* for mobile */
 @media (max-width: 700px) {
     .welcome, .questions {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .main {
+        margin-bottom: 40px;
+        background-size: auto 90vh;
+        background-position: center 80%;
     }
 
     .main h1 {
@@ -105,5 +116,26 @@
     .main button {
         width: 200px;
         height: 75px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+
+    .sub {
+        row-gap: 1rem;
+    }
+
+    .sub h2 {
+        font-size: 30px;
+    }
+
+    .sub p {
+        font-size: 20px;
+    }
+
+    .main button {
+        font-size: 25px;
     }
 }
