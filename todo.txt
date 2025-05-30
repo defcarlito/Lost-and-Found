@@ -2,10 +2,10 @@ TODO NEXT:
 
 * style home and home_guest for mobile users (DONE)
 * add styling for create post
-* add styling for view post
+* add styling for view post (DONE)
 * update db to store users, attach poster info to each post, update db for claim post logic
 * add claim post logic
-* style view post and claim post
+* style view post and claim post (DONE)
 * add a "my posts" section to edit/delete a user's posts?
 * add log to only allow @stthomas.edu domain's on the site
 * search posts functionality?
