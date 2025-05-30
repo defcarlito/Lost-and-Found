@@ -1,5 +1,5 @@
 .all {
-    margin: 40px;
+    margin: 25px;
 }
 
 .top-container {
@@ -100,7 +100,7 @@
     display: none !important;
 }
 
-/* for mobile */
+/* for obile */
 @media (max-width: 700px) {
     .welcome, .questions {
         font-size: 18px;

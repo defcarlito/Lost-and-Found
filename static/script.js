@@ -1,6 +1,4 @@
-
 const postContainer = document.getElementById("post-container");
-
 
 fetch("/api/posts")
     .then(response => response.json())
@@ -16,6 +14,7 @@ fetch("/api/posts")
                 <div class="post">
                     <h3 class="post-title">${post.title}</h3>
                     <img src="/static/uploads/${post.post_id}.jpg" alt="(picture)" class="post-img">
+                    <div class="spacer"></div>
                     <p class="post-found">Found: ${post.date_found}</p>
                 </div>
             </a>

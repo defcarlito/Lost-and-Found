@@ -54,6 +54,7 @@ def posts():
     # send user to login screen if they aren't signed in
     if not session.get("user"):
         return redirect('/login')
+    
     return render_template('posts.html')
 
 @app.route('/create-post', methods=['GET', 'POST'])
