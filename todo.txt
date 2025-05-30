@@ -1,6 +1,6 @@
 TODO NEXT:
 
-* style home and home_guest for mobile users
+* style home and home_guest for mobile users (DONE)
 * add styling for create post
 * add styling for view post
 * update db to store users, attach poster info to each post, update db for claim post logic
