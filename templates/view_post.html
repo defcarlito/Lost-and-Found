@@ -3,28 +3,39 @@
 <link rel="stylesheet" href="/static/css/view-post.css">
 {% endblock %}
 {% block content %}
-<h1>Listing for {{post['title']}}:</h1>
-<a href="/posts"><button type="button">Go back</button></a>
-<div class="post-details">
-    <div class="post-img">
-        <img src="/static/uploads/{{post['post_id']}}.jpg" class="post-img">
+<div class="all">
+    <h1>Listing for {{post['title']}}:</h1>
+    <a href="/posts"><button type="button">Go back</button></a>
+    <div class="post-details">
+        <div class="post-img">
+            <img src="/static/uploads/{{post['post_id']}}.jpg" class="post-img">
+        </div>
+        <div class="post-info">
+            <div class="description-container">
+                <h3>Description:</h3>
+                <p>{{post['description']}}</p>
+            </div>
+            <div class="postedby-container">
+                <h3>Posted by:</h3>
+                <p>{{post['posted_by']}}</p>
+            </div>
+            <div>
+                <h3>Found on:</h3>
+                <p>{{post['date_found']}}</p>
+            </div>
+        </div>
     </div>
     <div>
-        <p><strong>Description: </strong>{{post['description']}}</p>
-        <p><strong>Posted by: </strong>{{post['posted_by']}}</p>
-        <p><strong>Found on: </strong>{{post['date_found']}}</p>
-    </div>
+        <h2>Is this your item?</h2>
+        <p>Let the poster know you want to claim this item:</p>
+        <form>
+            <button>Claim</button>
+        </form>
+    </div>    
+    <footer>
+        <div>
+            <p>Post id: {{post['post_id']}}</p>
+        </div>
+    </footer>
 </div>
-<div>
-    <h2>Is this your item?</h2>
-    <p>Let the poster know you want to claim this item:</p>
-    <form>
-        <button>Claim</button>
-    </form>
-</div>    
-<footer>
-    <div>
-        <p>Post id: {{post['post_id']}}</p>
-    </div>
-</footer>
 {% endblock %}

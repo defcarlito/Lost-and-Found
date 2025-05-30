@@ -22,3 +22,5 @@ fetch("/api/posts")
         postContainer.appendChild(div);
     });
 });
+
+
