@@ -80,7 +80,7 @@ def create_post():
 
         image = request.files['image']
         image.save(f"static/uploads/{post_id}.jpg")
-        return redirect('/')
+        return redirect('/posts')
     return render_template('create_post.html')
 
 @app.route('/view-post/<post_id>')

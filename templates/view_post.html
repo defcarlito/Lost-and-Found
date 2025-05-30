@@ -4,34 +4,36 @@
 {% endblock %}
 {% block content %}
 <div class="all">
-    <h1>Listing for {{post['title']}}:</h1>
-    <a href="/posts"><button type="button">Go back</button></a>
-    <div class="post-details">
-        <div class="post-img">
-            <img src="/static/uploads/{{post['post_id']}}.jpg" class="post-img">
+    <h1>Listing for <i>{{post['title']}}:</i></h1>
+    <a href="/posts"><button type="button" class="go-back">Go back</button></a>
+    <div class="all-body">
+        <div class="post-details">
+            <div class="post-img">
+                <img src="/static/uploads/{{post['post_id']}}.jpg" class="post-img">
+            </div>
+            <div class="post-info">
+                <div class="description-container">
+                    <h3>Description:</h3>
+                    <p>{{post['description']}}</p>
+                </div>
+                <div class="postedby-container">
+                    <h3>Posted by:</h3>
+                    <p>{{post['posted_by']}}</p>
+                </div>
+                <div>
+                    <h3>Found on:</h3>
+                    <p>{{post['date_found']}}</p>
+                </div>
+            </div>
         </div>
-        <div class="post-info">
-            <div class="description-container">
-                <h3>Description:</h3>
-                <p>{{post['description']}}</p>
-            </div>
-            <div class="postedby-container">
-                <h3>Posted by:</h3>
-                <p>{{post['posted_by']}}</p>
-            </div>
-            <div>
-                <h3>Found on:</h3>
-                <p>{{post['date_found']}}</p>
-            </div>
-        </div>
+        <div class="claim-info">
+            <h2>Is this your item?</h2>
+            <p>Let the poster know you want to claim this item:</p>
+            <form>
+                <button>Claim</button>
+            </form>
+        </div>    
     </div>
-    <div>
-        <h2>Is this your item?</h2>
-        <p>Let the poster know you want to claim this item:</p>
-        <form>
-            <button>Claim</button>
-        </form>
-    </div>    
     <footer>
         <div>
             <p>Post id: {{post['post_id']}}</p>
