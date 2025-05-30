@@ -1,5 +1,5 @@
 .all {
-    margin: 40px;
+    margin: 25px;
 }
 
 .top-container {
@@ -12,6 +12,7 @@
     padding-left: 25px;
     margin: 0px;
     font-size: 22px;
+    margin-bottom: 40px;
 }
 
 .main {
@@ -87,4 +88,21 @@
 .sub p {
     font-size: 18px;
     line-height: 1.6;
+}
+
+/* For Mobile */
+@media (max-width: 700px) {
+    .welcome, .questions {
+        font-size: 20px;
+    }
+
+    .main h1 {
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+
+    .main button {
+        width: 200px;
+        height: 75px;
+    }
 }

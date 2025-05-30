@@ -25,6 +25,7 @@ body {
 .logo {
     width: 80px;
     height: 100px;
+    transition: transform 0.3s;
 }
 
 .text-left{
@@ -79,14 +80,15 @@ a {
     color: inherit;
 }
 
-@media (max-width: 1500px) {
+/* Smaller Desktop */
+@media (max-width: 1350px) {
+
     .text-ust {
         display: none;
     }
 
     .text-lf {
         margin-top: -200px;
-        color: red;
     }
 
     .nav-right-side {
@@ -101,32 +103,52 @@ a {
     }
 
     .nav-right-side a {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .logo {
-        width: 100px;
         height: auto;
         object-fit: contain;
+        transform: scale(1.1);
     }
 
 }
 
+/* Tablet */
 @media (max-width: 700px) {
     .logo {
         display: none;
     }
-
+    
     .text-lf {
         margin-top: 10px;
+        font-size: 50px;
     }
 
     .nav-right-side {
         margin-top: 8px;
+        gap: 18px;
     }
 
     .nav-right-side a {
-        font-size: 25px;
+        font-size: 20px;
+        white-space: nowrap;
     }
+
+    .navbar {
+        margin-bottom: 40px;
+    }
+
+@media (max-width: 450px) {
+    .text-lf {
+        padding-top: 20px;
+        font-size: 40px;
+    }
+
+   .nav-right-side a {
+        font-size: 18px;
+        white-space: nowrap;
+    } 
+}
 
 }
