@@ -1,0 +1,90 @@
+.all {
+    margin: 40px;
+}
+
+.top-container {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.welcome, .questions {
+    border-left: 5px solid #9e26b5;
+    padding-left: 25px;
+    margin: 0px;
+    font-size: 22px;
+}
+
+.main {
+    /* background-color: rgb(245, 245, 245); */
+    background-image: url("/static/images/campus.jpg");
+    background-size: cover;
+    background-position: center 80%;
+
+    text-align: center;
+    margin: 40 auto;
+    border-radius: 30px;
+    width: 100%;
+
+    padding-top: 85px;
+    padding-bottom: 85px;
+
+    font-size: 40px;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0 6px 10px
+}
+
+.main h1 {
+    color:white;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.main button {
+    font-family: "Lato", sans-serif;
+
+    background: linear-gradient(to right, rgba(81, 39, 115, 0.8), rgba(158, 38, 181, 0.8));
+    width: 250px;
+    height: 100px;
+
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+
+    font-size: 25px;
+    color: white;
+
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.main button:hover {
+    transform: scale(1.05);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin: auto;
+    gap: 30px;
+}
+
+.sub {
+    background: rgb(245, 245, 245);
+    max-height: 300px;
+    max-width: 100%;
+    padding: 2%;
+
+    border-radius: 30px;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0 6px 10px;
+}
+
+.sub h2 {
+    font-size: 30px;
+}
+
+.sub p {
+    font-size: 18px;
+    line-height: 1.6;
+}

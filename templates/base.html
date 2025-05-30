@@ -1,0 +1,38 @@
+<!--code for navbar-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="/static/css/base.css" rel="stylesheet">
+        {% block extra_css %}{% endblock %}
+        <title>Lost and Found</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="nav-left-side">
+                <div>
+                    <a href="/"><img src="/static/images/ustlogo.png" class="logo"></a>
+                </div>
+                <div class="text-left">
+                    <div class="text-ust">
+                        University of St. Thomas
+                    </div>
+                    <div class="text-lf">
+                        Lost and Found
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right-side">
+                <a href="/" class="nav-home">Home</a>
+                <a href="/posts" class="nav-posts">View Posts</a>
+                <a href="/create-post" class="nav-create-post">Create Post</a>
+                <a href="/logout" class="nav-sign-out">Sign out</a>
+            </div>
+        </div>
+
+        {% block content %}{% endblock %}
+
+    </body>
+</html> 

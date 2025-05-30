@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block extra_css %}
+<link rel="stylesheet" href="/static/css/home.css">
+{% endblock %}
+{% block content %}
+<div class="all">
+    <div class="top-container">
+        <div class="welcome">
+            <h1>Welcome to UST's <u>unofficial</u> lost and found page!</h1>
+        </div>
+        <div class="main">
+            <h1>Welcome!</h1>
+            <a href="/posts"><button>View posts</button></a>
+        </div>
+    </div>
+    <div class="questions-container">
+        <div class="questions">
+            <h1>What to know...</h1>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="sub">
+            <h2>🧐 Why use this site?</h2>
+            <p>
+                Lost an item? Maybe someone else on campus found it... but then what? Who should they give it to? 
+                How do YOU know who they gave your lost item to?
+            </p>
+            <p>
+                <strong>This site acts as your go-to place to look for the item
+                that you lost on campus!</strong>
+            </p>
+        </div>
+        <div class="sub">
+            <h2>🧭 Getting started...</h2>
+            <p>
+                You <strong>must</strong> be a UST student in order to view and create posts.
+            </p>
+            <p>
+                <strong>Sign in with your UST login through Microsoft</strong> to see the posts of lost items or create a post yourself.
+            </p>
+        </div>
+        <div class="sub">
+            <h2>❓ When do I use it?</h2>
+            <p>
+                1️⃣ You find an item around campus that looks like it was lost. So, you hold onto it and post it on this site
+                as a lost item searching for its owner.
+            </p>
+            <p>
+                2️⃣ You lost an item around campus and are panicked. You don't know who to ask or where you lost it. So, you visit
+                this site and browse through the posts of lost items and there it is... your item.
+            </p>
+        </div>
+        <div class="sub">
+            <h2>⚠️ Disclaimer!</h2>
+            <p>
+                The idea of this site is built through the trust that you as the user will <strong>do the right thing:</strong>
+            </p>
+            <p>
+                - Don't try to claim items that aren't yours.
+            </p>
+            <p>
+                - If you have a post up for a lost item and someone reaches out to you, it would be 
+                best practice to get them to prove that the item is truly theirs, expecially if the item is of higher value.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

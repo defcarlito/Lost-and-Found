@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block extra_css %}
+<link rel="stylesheet" href="/static/css/view-post.css">
+{% endblock %}
+{% block content %}
+<h1>Listing for {{post['title']}}:</h1>
+<a href="/posts"><button type="button">Go back</button></a>
+<div class="post-details">
+    <div class="post-img">
+        <img src="/static/uploads/{{post['post_id']}}.jpg" class="post-img">
+    </div>
+    <div>
+        <p><strong>Description: </strong>{{post['description']}}</p>
+        <p><strong>Posted by: </strong>{{post['posted_by']}}</p>
+        <p><strong>Found on: </strong>{{post['date_found']}}</p>
+    </div>
+</div>
+<div>
+    <h2>Is this your item?</h2>
+    <p>Let the poster know you want to claim this item:</p>
+    <form>
+        <button>Claim</button>
+    </form>
+</div>    
+<footer>
+    <div>
+        <p>Post id: {{post['post_id']}}</p>
+    </div>
+</footer>
+{% endblock %}

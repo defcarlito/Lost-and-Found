@@ -1,0 +1,5 @@
+TODO NEXT:
+
+* remove filtering functionality col. from data base
+
+* add claim post functionality
